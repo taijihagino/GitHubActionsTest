@@ -1,0 +1,14 @@
+name: 'GitHubActionsTest'
+description: 'GitHubActionsのテスト用アクションです。'
+inputs:
+  test-inputs:
+    description: "inputsのテストです"
+    required: true
+    default: "foo"
+outputs:
+  test-output:
+    description: 'outputsのテストです'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
+
